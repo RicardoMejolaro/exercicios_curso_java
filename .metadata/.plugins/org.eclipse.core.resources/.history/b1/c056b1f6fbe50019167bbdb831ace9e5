@@ -1,0 +1,46 @@
+package entities;
+
+public class Locadora {
+	
+	private int quantidade;
+	private double valor;
+	private double faturamento;
+	private double locacao;
+	
+	public Locadora(int quantidade, double valor) {
+
+		this.quantidade = quantidade;
+		this.valor = valor;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+	
+	public void aluguelMes() {
+		
+		locacao = quantidade * 30 /100;
+	}
+	
+	public void aluguelAno() {
+		
+		locacaoAno = locacao * 12;
+	}
+	
+	
+	public void faturamentoAnual(int quantidade, double valor) {
+		
+		faturamento += (quantidade * valor)  
+	}
+
+	
+	
+	
+	
+	
+
+}

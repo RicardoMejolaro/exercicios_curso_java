@@ -1,0 +1,118 @@
+package entities;
+
+public class Locadora {
+	
+	private int quantidade;
+	private double valor;
+	private double faturamento;
+	private int locacaoMes;
+	private int locacaoAno;
+	private double multaAtraso;
+	private int perdaMidia;
+	private int reposicao;
+	private int quantidadeNova;
+	
+	
+	
+	public Locadora(int quantidade, double valor, double faturamento, int locacaoMes, int locacaoAno,
+			double multaAtraso, int perdaMidia, int reposicao, int quantidadeNova) {
+
+		this.quantidade = quantidade;
+		this.valor = valor;
+		this.faturamento = faturamento;
+		this.locacaoMes = locacaoMes;
+		this.locacaoAno = locacaoAno;
+		this.multaAtraso = multaAtraso;
+		this.perdaMidia = perdaMidia;
+		this.reposicao = reposicao;
+		this.quantidadeNova = quantidadeNova;
+	}
+	
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public double getFaturamento() {
+		return faturamento;
+	}
+	
+	public int getLocacaoMes() {
+		return locacaoMes;
+	}
+
+	public int getLocacaoAno() {
+		return locacaoAno;
+	}
+
+	public double getMultaAtraso() {
+		return multaAtraso;
+	}
+
+	public int getPerdaMidia() {
+		return perdaMidia;
+	}
+
+	public int getReposicao() {
+		return reposicao;
+	}
+
+	public int getQuantidadeNova() {
+		return quantidadeNova;
+	}
+
+	public void locacaoMes() {
+		
+		locacaoMes = quantidade * 30 /100;
+	
+	}
+	
+	public void aluguelAno() {
+		
+		locacaoAno = locacaoMes * 12;
+	}
+
+	
+	public void multaAtraso() {
+		
+		multaAtraso = locacaoMes * 1 /100;
+	}
+	
+	public void locacaoAno() {
+		
+		locacaoAno = locacaoMes * 12;
+	}
+	
+	public void perdaAno() {
+		
+		perdaMidia = quantidade * 2 / 100;
+	}
+	
+	public void reposicaoAno() {
+		
+		reposicao = perdaMidia * 1 /100;
+	
+	}
+	
+	public void quantidadeNovaAno() {
+		
+		quantidadeNova = quantidade + reposicao;
+	}
+	
+	public double faturamentoAnual(int quantidade, double valor) {
+		
+		return faturamento = locacaoAno + multaAtraso;
+	}	
+
+}

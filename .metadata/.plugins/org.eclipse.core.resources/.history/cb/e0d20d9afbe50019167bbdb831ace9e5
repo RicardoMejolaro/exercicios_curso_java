@@ -1,0 +1,28 @@
+package entities;
+
+public class Locadora {
+	
+	private int quantidade;
+	private double valor;
+	
+	public Locadora(int quantidade, double valor) {
+
+		this.quantidade = quantidade;
+		this.valor = valor;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	
+	
+	
+	
+	
+
+}

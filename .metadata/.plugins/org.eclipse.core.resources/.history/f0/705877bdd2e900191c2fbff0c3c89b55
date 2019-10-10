@@ -1,0 +1,53 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Aluguel;
+
+public class Programa6 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+			
+		Aluguel[] vetor = new Aluguel[10];
+		
+		System.out.print("Informe o número de quartos a serem a alugados: ");
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n; i++) {
+			
+			System.out.println();
+			System.out.println("# Aluguel 1: " + i + ": ");
+			System.out.print("Informe o nome do hóspede: ");
+			sc.nextLine();
+			String hospede = sc.nextLine();
+
+			System.out.print("Informe o E-mail do hóspede: ");
+			sc.nextLine();
+			String email = sc.nextLine();
+			
+			System.out.println();
+			System.out.print("o quarto número do quarto do hóspede de 0 à 9:");
+			int numQuarto = sc.nextInt();
+			
+			vetor[numQuarto] = new Aluguel(hospede, email);
+				
+		}
+		
+		System.out.println();
+		System.out.println("Quartos alugados: ");		
+		for(int i=0; i<vetor.length; i++) {
+			
+			if(vetor[i] != null) {
+				
+				System.out.println(i + ": " + vetor[i]);
+			}
+			
+		}		
+		
+		sc.close();
+		
+	}
+
+}

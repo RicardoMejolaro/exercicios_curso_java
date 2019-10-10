@@ -1,0 +1,35 @@
+package entities;
+
+public class Estudante {
+	
+	public String nome, resultado;
+	public double nota1, nota2, nota3;
+	
+	public double media() {
+		
+		return nota1 + nota2 + nota3 / 3;
+	}
+	
+	public String result(String resultado) {
+		
+		if(media() >= 60.00) {
+			
+		resultado = "PASS";
+		
+		} else if (media() < 60.00){
+			
+			
+		}
+		
+		return result;
+	}
+	
+	public String toString() {
+		
+		return String.format("FINAL GRADE = %.2f %n" + media() 
+				+ ", "
+				+ result(resultado));
+		
+	}
+
+}

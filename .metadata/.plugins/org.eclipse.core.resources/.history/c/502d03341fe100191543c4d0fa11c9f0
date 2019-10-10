@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_for7 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int n = sc.nextInt();
+		int y = 0;
+		int z = 0;
+
+		if (n >= 0) {
+
+			for (int i = 1; i <= n; i++) {
+
+				i = i;
+
+				y = i * i;
+
+				z = i * i * i;
+
+				System.out.printf("%d %d %d %n", i, y, z);
+			}
+
+		} else {
+
+			System.out.println("número inválido");
+		}
+
+		sc.close();
+	}
+}

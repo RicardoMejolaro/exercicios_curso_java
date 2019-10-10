@@ -1,0 +1,32 @@
+package application;
+
+import java.util.Scanner;
+
+public class Programa8 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		
+		System.out.print("Digite a quantidade de linhas: ");
+		int l = sc.nextInt();
+		
+		System.out.println("Digite a quantidade de colunas: ");
+		int c = sc.nextInt();
+		
+		int [][] matriz = new int[l][c];
+		
+		for(int i=0; i<matriz.length; i++) {
+			
+			for(int j=0; i<matriz[i].length; j++) {
+				
+				
+			}
+		}
+		
+		
+		sc.close();
+	}
+
+}

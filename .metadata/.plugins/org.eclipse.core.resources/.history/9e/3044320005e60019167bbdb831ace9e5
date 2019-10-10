@@ -1,0 +1,105 @@
+package entities;
+
+public class Locadora {
+	
+	private int quantidade;
+	private double valor;
+	private double faturamento;
+	private int locacaoMes;
+	private int locacaoAno;
+	private double multaAtraso;
+	private int perdaMidia;
+	private int reposicao;
+	private int quantidadeNova;
+	
+		
+
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public double getFaturamento() {
+		return faturamento;
+	}
+	
+	public int getLocacaoMes() {
+		return locacaoMes;
+	}
+
+	public int getLocacaoAno() {
+		return locacaoAno;
+	}
+
+	public double getMultaAtraso() {
+		return multaAtraso;
+	}
+
+	public int getPerdaMidia() {
+		return perdaMidia;
+	}
+
+	public int getReposicao() {
+		return reposicao;
+	}
+
+	public int getQuantidadeNova() {
+		return quantidadeNova;
+	}
+
+	public void locacaoMes(int quantidade) {
+		
+		locacaoMes = quantidade * 30 /100;
+	
+	}
+	
+	public void aluguelAno(int locacaoMes) {
+		
+		locacaoAno = locacaoMes * 12;
+	}
+
+	
+	public void multaAtraso(int locacaoMes) {
+		
+		multaAtraso = locacaoMes * 1 /100;
+	}
+	
+	public void locacaoAno(int locacaoMes) {
+		
+		locacaoAno = locacaoMes * 12;
+	}
+	
+	public void perdaAno(int quantidade) {
+		
+		perdaMidia = quantidade * 2 / 100;
+	}
+	
+	public void reposicaoAno(int perdaMidia) {
+		
+		reposicao = perdaMidia * 1 /100;
+	
+	}
+	
+	public void quantidadeNovaAno(int quantidade, int reposicao) {
+		
+		quantidadeNova = quantidade + reposicao;
+	}
+	
+	public double faturamentoAnual(int quantidade, double valor) {
+		
+		return faturamento = locacaoAno + multaAtraso;
+	}	
+
+}

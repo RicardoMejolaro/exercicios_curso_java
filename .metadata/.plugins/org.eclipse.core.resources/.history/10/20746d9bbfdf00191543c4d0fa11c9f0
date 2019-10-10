@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_for2 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int N = sc.nextInt();
+		int in = 0;
+		int on = 0;
+
+		for (int i = 0; i < N; i++) {
+
+			System.out.printf("%d in %n", i);
+
+			if (i >= 10 && i <= 20) {
+
+			} else {
+
+				System.out.printf("%d out %n", i);
+
+			}
+
+		}
+		
+		sc.close();
+	}
+
+}

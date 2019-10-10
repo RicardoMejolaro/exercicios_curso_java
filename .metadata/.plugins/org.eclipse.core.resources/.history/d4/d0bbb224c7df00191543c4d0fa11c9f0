@@ -1,0 +1,66 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_for3 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite quantas vezes deseja realizar o teste: ");
+		int n = sc.nextInt();
+		
+		double peso2 = 2.0;
+		double peso3 = 3.0;
+		double peso5 = 5.0;
+
+		double num1 = 0.0;
+		double num2 = 0.0;
+		double num3 = 0.0;
+		double mediaPonderada1 = 0.0;
+		double mediaPonderada2 = 0.0;
+		double mediaPonderada3 = 0.0;
+
+		double somaValores1 = 0.0;
+		double somaValores2 = 0.0;
+		double somaValores3 = 0.0;
+
+		double somaValoresPeso = 0.0; 
+		
+		for (int i=0; i < n; i++) {
+			
+			System.out.println("Digite os 3 valores com uma casa decimal: ");
+			
+			num1 = sc.nextDouble();
+			num1 = num1 * peso2;
+			
+			num2 = sc.nextDouble();
+			num2 = num2 * peso3;
+
+			num3 = sc.nextDouble();
+			num3 = num3 * peso5;
+			
+			somaValoresPeso = peso2 + peso3 + peso5;
+		
+			somaValores1 = num1 + num2 + num3;
+			mediaPonderada1 = somaValores1 / somaValoresPeso;
+			
+			somaValores2 = num1 + num2 + num3;
+			mediaPonderada2 = somaValores2 / somaValoresPeso;
+			
+			somaValores3 = num1 + num2 + num3;
+			mediaPonderada3 = somaValores3 / somaValoresPeso;
+
+		}
+		
+		System.out.println(mediaPonderada1);
+		System.out.println(mediaPonderada2);
+		System.out.println(mediaPonderada3);
+		
+		sc.close();
+		
+	}
+
+}

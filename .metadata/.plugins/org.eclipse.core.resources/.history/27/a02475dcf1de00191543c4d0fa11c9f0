@@ -1,0 +1,24 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_if_else_imposto_renda08 {
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double salario = sc.nextDouble();
+		double imposto = 0;
+		
+		if (salario >= 2000.01 && salario <= 3000.00) {
+			
+			imposto = 1000.00 + (2 * 100 / 18);
+			
+		}else
+		
+		
+	}
+
+}

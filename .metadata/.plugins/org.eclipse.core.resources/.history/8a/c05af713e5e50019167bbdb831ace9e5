@@ -1,0 +1,68 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Conta;
+
+public class Program5 {
+
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double saldo;
+		
+		System.out.println("Digite o número da conta: ");
+		int numConta = sc.nextInt();
+		
+		System.out.println("Digite o nome do cliente: ");
+		sc.nextLine();
+		String nome = sc.nextLine();
+		
+				
+		System.out.println("Cliente irá realizar depósito inicial? (s/n)?: ");
+		char opcao = sc.nextLine().charAt(0);
+		
+		if (opcao == 's' || opcao == 'S') {
+			
+			System.out.println("Por favor digite o valor do depósito: ");
+			double deposito = sc.nextDouble();
+			
+			saldo = deposito;
+			
+		}else {
+			
+			saldo = 0.00;
+		}
+		
+		Conta conta = new Conta(numConta, nome, saldo);
+		
+		System.out.println();
+		System.out.println("Dados da conta:");
+		System.out.println(conta);
+		System.out.println();
+
+		System.out.println("Entre com o valor do depósito: ");
+		double deposito = sc.nextDouble();
+		conta.depositoConta(deposito);
+		
+		System.out.println();
+		System.out.println("Dados da conta:");
+		System.out.println(conta);
+		System.out.println();
+		
+		System.out.println("Entre com o valor do Saque: ");
+		double saque = sc.nextDouble();
+		conta.saqueConta(saque);
+		
+		System.out.println();
+		System.out.println("Dados da conta:");
+		System.out.println(conta);
+		System.out.println();
+
+		sc.close();
+	}
+
+}

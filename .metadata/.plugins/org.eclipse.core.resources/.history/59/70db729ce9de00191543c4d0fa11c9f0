@@ -1,0 +1,56 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_if_else_valor_conta_5 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("Digite o código do lanche consumido: ");
+		
+		int cod = sc.nextInt();
+		
+		System.out.println("Digite a quantidade de lanches consumidos: ");
+		
+		int qtdLanches = sc.nextInt();
+
+		double preco1 = 4.00;
+		double preco2 = 4.50;
+		double preco3 = 5.00;
+		double preco4 = 2.00;
+		double preco5 = 1.50;
+		
+		double precoTotal = 0;
+		
+		if(cod == 1) {
+			
+			precoTotal = qtdLanches * preco1;
+			
+		}else if (cod == 2) {
+			
+			precoTotal = qtdLanches * preco2;
+			
+		}else if (cod == 3) {
+			
+			precoTotal = qtdLanches * preco3;
+			
+		}else if (cod == 4) {
+			
+			precoTotal = qtdLanches * preco4;
+			
+		}else if (cod == 5) {
+			
+			precoTotal = qtdLanches * preco5;
+			
+		}else {
+			
+			System.out.println("Código incorreto, digitar um código válido!");
+		}		
+		
+		System.out.printf("O preço total da compra é:R$ %.2f", precoTotal);
+	}
+
+}

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_if_else_intervalo_6 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um número para saber em qual intervalo de 0 à 100 ele está: ");
+		
+		int num = sc.nextInt();
+		
+		if (num >= 0 && num <= 25) {
+			
+			System.out.println("INTERVALO (25, 50)");
+		}
+
+	}
+
+}

@@ -1,0 +1,30 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class primeira_fase_exercicio_if_else_valor_conta_5 {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		
+		Scanner sc = new Scanner(System.in);
+	
+
+		int cod1 = sc.nextInt();
+		int cod2 = sc.nextInt();
+		int cod3 = sc.nextInt();
+		int cod4 = sc.nextInt();
+		int cod5 = sc.nextInt();
+
+		double preco1 = 4.00;
+		double preco2 = 4.50;
+		double preco3 = 5.00;
+		double preco4 = 2.00;
+		double preco5 = 1.50;
+		
+		int qtde = 
+		
+		
+	}
+
+}

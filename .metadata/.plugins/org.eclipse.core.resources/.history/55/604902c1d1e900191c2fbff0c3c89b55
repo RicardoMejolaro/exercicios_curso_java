@@ -1,0 +1,49 @@
+package entities;
+
+public class Aluguel {
+	
+	private int numQuarto;
+	private String hospede;
+	private String email;
+	
+	public Aluguel(int numQuarto, String hospede, String email) {
+		this.numQuarto = numQuarto;
+		this.hospede = hospede;
+		this.email = email;
+	}
+
+	public int getNumQuarto() {
+		return numQuarto;
+	}
+
+	public void setNumQuarto(int numQuarto) {
+		this.numQuarto = numQuarto;
+	}
+
+	public String getHospede() {
+		return hospede;
+	}
+
+	public void setHospede(String hospede) {
+		this.hospede = hospede;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String toString(int numQuarto, String hospede, String email) {
+		
+		return "Quarto: "
+				+ numQuarto
+				+ "Nome: "
+				+ hospede
+				+ "Email: "
+				+ email;
+	}
+	
+}
